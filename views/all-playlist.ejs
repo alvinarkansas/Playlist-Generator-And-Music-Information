@@ -53,6 +53,10 @@
                                 <h4><%= playlists[i].playlist_name %></h4>
                                 <p class="card-text"><%= playlists[i].description %></p>
                             </div>
+                            <div class="card-footer" style="display: flex; justify-content: space-between;">
+                                <small class="text-muted">Created at <%= playlists[i].LastUpdate %></small>
+                                <small><a class="btn btn-danger" href="/playlists/delete/<%= playlists[i].id %>">Delete</a></small>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -60,22 +64,6 @@
             </div>
         </div>
     </div>
-    <h2>My Playlist</h2>
-    <a href="/playlists/add">New Playlist</a><br>
-    <table style="width:100%">
-        <tr>
-            <th>Playlist Name</th>
-            <th>Description</th>
-            <th>Action</th>
-        </tr>
-        <% for (let i = 0; i < playlists.length; i++) { %>
-            <tr>
-                <td><%= playlists[i].playlist_name %></td>
-                <td><%= playlists[i].description %></td>
-                <td><a href="/playlists/edit/<%= playlists[i].id %>" class="btn">Edit Playlist</a><a href="/playlists/delete/<%= playlists[i].id %>">Delete Playlist</a></td>
-            </tr>
-        <% } %>
-    </table> 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

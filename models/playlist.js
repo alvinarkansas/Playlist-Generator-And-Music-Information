@@ -15,8 +15,14 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     description: DataTypes.STRING,
-    AccountId: DataTypes.INTEGER
+    AccountId: DataTypes.INTEGER,
+    LastUpdate: DataTypes.STRING
   }, {
+    hooks: {
+      beforeCreate: (Playlist, option) => {
+        Playlist.LastUpdate = Playlist.updatedAt.toDateString();
+      }
+    },
     sequelize,
     modelName: 'Playlist'
   })

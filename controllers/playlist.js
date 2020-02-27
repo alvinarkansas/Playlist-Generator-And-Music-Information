@@ -1,4 +1,5 @@
 const { Playlist, PlaylistSong, Song }= require('../models')
+const sequelize = require('sequelize')
 
 class PlaylistController {
     static showAllPlaylist(req, res) {
@@ -39,7 +40,13 @@ class PlaylistController {
             include: [Song, Playlist]
         })
             .then((playlist) => {
-                Song.findAll()
+                let keyword = req.query.search || '';
+
+                Song.findAll({
+                    where: {
+                        mood: {[sequelize.Op.like] : `%${keyword}%`}
+                    }
+                })
                 .then((allSong) => {
                     Playlist.findAll({
                         where: {

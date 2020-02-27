@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: "Nunito";
+            background-color: rgb(33,37,41);
         }
         #main {
             display: flex;
@@ -30,6 +31,8 @@
             background-color: rgb(33,37,41);
             color: white;
             font-size: 3rem;
+            display: flex;
+            justify-content: space-between;
         }
         #childHeader {
             line-height: 200px;
@@ -41,6 +44,10 @@
 <body>
     <div id="header">
         <div id="childHeader"><%= playlistName %></div>
+        <form action="/playlists/edit/<%= playlistId %>" method="get" style="margin-right: 3rem" class="form-inline my-2 my-lg-0">
+            <input name="search" class="form-control mr-sm-2" type="search" placeholder="dynamic, chill, life sucks, happy, tender" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
     <div id="main">
         <div id="left">
