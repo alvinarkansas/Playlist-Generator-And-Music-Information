@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Library</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d979fc4f1d.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Nunito";
+        }
+        #main {
+            display: flex;
+        }
+        #left {
+            width: 50%;
+            background-color: rgb(33,37,41);
+            padding-left: 3rem;
+            padding-right: 1rem;
+        }
+        #right {
+            width: 50%;
+            background-color: rgb(33,37,41);
+            padding-left: 1rem;
+            padding-right: 3rem;
+        }
+        #header {
+            height: 250px;
+            background-color: rgb(33,37,41);
+            color: white;
+            font-size: 3rem;
+        }
+        #childHeader {
+            line-height: 200px;
+            padding-left: 50px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let i = 0; i < songs.length; i++) { %>
+                <tr>
+                    <td><%= songs[i].title %></td>
+                    <td><%= songs[i].artist_name %></td>
+                    <td><%= songs[i].year %></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

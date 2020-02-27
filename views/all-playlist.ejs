@@ -4,23 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Playlist</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d979fc4f1d.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Nunito";
+            background-color: rgb(33,37,41);
+            color: white;
+        }
+        #page {
+            margin: 0 200px 0 200px;
+        }
+        #header {
+            height: 300px;
+            font-size: 5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .childHeader {
+            line-height: 400px;
+            font-weight: 700;
+        }
+        p, h4 {
+            color: black;
+        }
+        .card {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div id="page">
+        <div id="header">
+            <div class="childHeader" style="padding-left: 50px;">Playlists</div>
+            <div class="childHeader" style="padding-right: 100px;">
+                <a href="/playlists/add"><i class="fas fa-plus-circle"></i></a>
+            </div>
+        </div>
+        <div id="main">
+            <div class="row">
+            <% for (let i = 0; i < playlists.length; i++) { %>
+                <div class="col-md-3 col-sm-12 mb-3">
+                    <a href="/playlists/edit/<%= playlists[i].id %>" style="text-decoration: none;">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i.ibb.co/b1R2nsh/unnamed.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4><%= playlists[i].playlist_name %></h4>
+                                <p class="card-text"><%= playlists[i].description %></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <% } %>
+            </div>
+        </div>
+    </div>
     <h2>My Playlist</h2>
     <a href="/playlists/add">New Playlist</a><br>
     <table style="width:100%">
         <tr>
-          <th>Playlist Name</th>
-          <th>Description</th>
-          <th>Action</th>
+            <th>Playlist Name</th>
+            <th>Description</th>
+            <th>Action</th>
         </tr>
         <% for (let i = 0; i < playlists.length; i++) { %>
             <tr>
                 <td><%= playlists[i].playlist_name %></td>
                 <td><%= playlists[i].description %></td>
-                <td><a href="/playlists/edit/<%= playlists[i].id %>" class="btn">Edit Playlist</a>
+                <td><a href="/playlists/edit/<%= playlists[i].id %>" class="btn">Edit Playlist</a><a href="/playlists/delete/<%= playlists[i].id %>">Delete Playlist</a></td>
             </tr>
         <% } %>
     </table> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ class PlaylistController {
     static showAllPlaylist(req, res) {
         Playlist.findAll()
         .then((playlists) => {
+            // res.render('column')
             res.render('all-playlist', { playlists })
         })
         .catch((err) => {
@@ -40,7 +41,14 @@ class PlaylistController {
             .then((playlist) => {
                 Song.findAll()
                 .then((allSong) => {
-                    res.render('edit-playlist', { playlist, allSong, playlistId: req.params.playlistId })
+                    Playlist.findAll({
+                        where: {
+                            id: req.params.playlistId
+                        }
+                    })
+                    .then((thePlaylist) => {
+                        res.render('edit-playlist', { playlist, allSong, playlistId: req.params.playlistId, playlistName: thePlaylist[0].playlist_name })
+                    })
                 })
             })
             .catch((err) => {
@@ -87,6 +95,20 @@ class PlaylistController {
             })
             .then(() => {
                 res.redirect(`/playlists/edit/${playlistId}`)
+            })
+            .catch((err) => {
+                res.send(err)
+            })
+    }
+
+    static deletePlaylist(req, res) {
+        Playlist.destroy({
+            where: {
+                id: req.params.playlistId
+            }
+        })
+            .then(() => {
+                res.redirect(`/playlists`)
             })
             .catch((err) => {
                 res.send(err)

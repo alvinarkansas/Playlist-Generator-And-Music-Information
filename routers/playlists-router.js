@@ -14,4 +14,6 @@ router.get('/delete/:playlistId/:songId', PlaylistController.delete)
 
 router.get('/addsong/:playlistId/:songId', PlaylistController.addSong)
 
+router.get('/delete/:playlistId', PlaylistController.deletePlaylist)
+
 module.exports = router;
