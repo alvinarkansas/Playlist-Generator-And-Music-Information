@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Playlist</title>
+    <style>
+        #main {
+            display: flex;
+        }
+        #left {
+            width: 50%;
+            background-color: gray;
+        }
+        #right {
+            width: 50%;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        header
+    </div>
+    <div id="main">
+        <div id="left">
+            <table style="width:100%">
+                <tr>
+                  <th>Title</th>
+                  <th>Artist</th>
+                  <th>Year</th>
+                  <th>Remove</th>
+                </tr>
+                <% for (let i = 0; i < playlist.length; i++) { %>
+                    <tr>
+                        <td><%= playlist[i].Song.title %></td>
+                        <td><%= playlist[i].Song.artist_name %></td>
+                        <td><%= playlist[i].Song.year %></td>
+                        <td><a href="/playlists/delete/<%= playlist[i].Playlist.id %>/<%= playlist[i].Song.id %>" class="btn">Remove</a>
+                    </tr>
+                <% } %>
+            </table> 
+        </div>
+        <div id="right">
+            <table style="width:100%">
+                <tr>
+                  <th>Title</th>
+                  <th>Artist</th>
+                  <th>Year</th>
+                  <th>Add</th>
+                </tr>
+                <% for (let i = 0; i < allSong.length; i++) { %>
+                    <tr>
+                        <td><%= allSong[i].title %></td>
+                        <td><%= allSong[i].artist_name %></td>
+                        <td><%= allSong[i].year %></td>
+                        <td><a href="/playlists/addsong/<%= playlistId %>/<%= allSong[i].id %>" class="btn">Add</a>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        #header {
+            background-color: rgb(92, 92, 92);
+            height: 200px;
+        }
+        #main {
+            background-color: rgb(133, 133, 133);
+            padding: 50px 200px;
+            display: flex;
+        }
+        .forCards {
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3% 5% 5% 5%;
+        }
+        .card {
+            width: 270px;
+            height: 350px;
+            background-color: whitesmoke;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .card:hover {
+            background-color: rgba(44, 44, 44, 0.582);
+        }
+        .icon {
+            height: 60%;
+            border-radius: 10px 10px 0 0;
+            border-bottom: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(27, 29, 29);
+        }
+        .desc {
+            height: 40%;
+        }
+        h4 {
+            margin-left: 20px;
+        }
+        p {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Your Playlists</div>
+    <a href="">New Playlist</a>
+    <div id="main">
+        <div class="forCards">
+            <div onclick="" class="card">
+                <div class="icon">
+                    <i class="fab fa-fort-awesome fa-4x"></i>
+                </div>
+                <div class="desc">
+                    <h4>Playlist 1</h4>
+                    <p>Description</p>
+                </div>
+            </div>
+            <div onclick="" class="card">
+                <div class="icon">
+                    <i class="fas fa-film fa-4x"></i>
+                </div>
+                <div class="desc">
+                    <h4>Playlist 2</h4>
+                    <p>Description</p>
+                </div>
+            </div>
+            <a href="#">
+                <div onclick="" class="card">
+                    <div class="icon">
+                        <i class="fas fa-user-tie fa-4x"></i>
+                    </div>
+                    <div class="desc">
+                        <h4>Playlist 3</h4>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

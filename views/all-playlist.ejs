@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+</head>
+<body>
+    <h2>My Playlist</h2>
+    <a href="/playlists/add">New Playlist</a><br>
+    <table style="width:100%">
+        <tr>
+          <th>Playlist Name</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        <% for (let i = 0; i < playlists.length; i++) { %>
+            <tr>
+                <td><%= playlists[i].playlist_name %></td>
+                <td><%= playlists[i].description %></td>
+                <td><a href="/playlists/edit/<%= playlists[i].id %>" class="btn">Edit Playlist</a>
+            </tr>
+        <% } %>
+    </table> 
+</body>
+</html>

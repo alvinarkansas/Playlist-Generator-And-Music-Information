@@ -1,0 +1,260 @@
+[
+    {
+        "title":"Don't Look Back in Anger",
+        "artist_name":"Oasis",
+        "year":1990,
+        "mood":"life sucks"
+    },
+    {
+        "title":"Happy",
+        "artist_name":"Pharell Williams",
+        "year":2013,
+        "mood":"happy"
+    },
+    {
+        "title":"Island In The Sun",
+        "artist_name":"Weezer",
+        "year":2001,
+        "mood":"happy"
+    },
+    {
+        "title":"Cake By The Ocean",
+        "artist_name":"DNCE",
+        "year":2015,
+        "mood":"happy"
+    },
+    {
+        "title":"Uptown Funk",
+        "artist_name":"Bruno Mars",
+        "year":2014,
+        "mood":"happy"
+    },
+    {
+        "title":"Talking To The Moon",
+        "artist_name":"Bruno Mars",
+        "year":2010,
+        "mood":"life sucks"
+    },
+    {
+        "title":"Bitterlove",
+        "artist_name":"Ardhito Pramono",
+        "year":2018,
+        "mood":"happy"
+    },
+    {
+        "title":"The Sun",
+        "artist_name":"Ardhito Pramono",
+        "year":2017,
+        "mood":"chill"
+    },
+    {
+        "title":"Immigrant Song",
+        "artist_name":"Led Zeppelin",
+        "year":1970,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Tears Don't Fall",
+        "artist_name":"Bullet For My Valentine",
+        "year":2005,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Ignorance",
+        "artist_name":"Paramore",
+        "year":2009,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Brick By Boring Brick",
+        "artist_name":"Paramore",
+        "year":2009,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Jealous",
+        "artist_name":"Nick Jonas",
+        "year":2014,
+        "mood":"life sucks"
+    },
+    {
+        "title":"Setapak Sriwedari",
+        "artist_name":"Maliq & D'Essentials",
+        "year":2013,
+        "mood":"chill"
+    },
+    {
+        "title":"Drama Romantika",
+        "artist_name":"Maliq & D'Essentials",
+        "year":2013,
+        "mood":"happy"
+    },
+    {
+        "title":"We Will Rock You",
+        "artist_name":"Queen",
+        "year":1977,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Love Of My Life",
+        "artist_name":"Queen",
+        "year":1975,
+        "mood":"tender"
+    },
+    {
+        "title":"Radio Gaga",
+        "artist_name":"Queen",
+        "year":1984,
+        "mood":"happy"
+    },
+    {
+        "title":"Tender",
+        "artist_name":"Blur",
+        "year":1998,
+        "mood":"tender"
+    },
+    {
+        "title":"Paint My Love",
+        "artist_name":"Michael Learns To Rock",
+        "year":1996,
+        "mood":"tender"
+    },
+    {
+        "title":"That's Why You Go",
+        "artist_name":"Michael Learns To Rock",
+        "year":1995,
+        "mood":"tender"
+    },
+    {
+        "title":"25 Minutes",
+        "artist_name":"Michael Learns To Rock",
+        "year":1993,
+        "mood":"life sucks"
+    },
+    {
+        "title":"I Want It That Way",
+        "artist_name":"Backstreet Boys",
+        "year":1999,
+        "mood":"happy"
+    },
+    {
+        "title":"Versace On The Floor",
+        "artist_name":"Bruno Mars",
+        "year":2016,
+        "mood":"tender"
+    },
+    {
+        "title":"Marry You",
+        "artist_name":"Bruno Mars",
+        "year":2010,
+        "mood":"tender"
+    },
+    {
+        "title":"Too Good To Say Goodbye",
+        "artist_name":"Bruno Mars",
+        "year":2016,
+        "mood":"life sucks"
+    },
+    {
+        "title":"Memulai Kembali",
+        "artist_name":"Monita Tahalea",
+        "year":2015,
+        "mood":"chill"
+    },
+    {
+        "title":"Sewindu",
+        "artist_name":"Tulus",
+        "year":2011,
+        "mood":"tender"
+    },
+    {
+        "title":"Jangan Cintai Aku Apa Adanya",
+        "artist_name":"Tulus",
+        "year":2014,
+        "mood":"tender"
+    },
+    {
+        "title":"Teman Hidup",
+        "artist_name":"Tulus",
+        "year":2011,
+        "mood":"tender"
+    },
+    {
+        "title":"Sesuatu Di Jogja",
+        "artist_name":"Adhitia Sofyan",
+        "year":2017,
+        "mood":"tender"
+    },
+    {
+        "title":"Adelaide Sky",
+        "artist_name":"Adhitia Sofyan",
+        "year":2009,
+        "mood":"tender"
+    },
+    {
+        "title":"Blue Sky Collapse",
+        "artist_name":"Adhitia Sofyan",
+        "year":2009,
+        "mood":"life sucks"
+    },
+    {
+        "title":"21 Guns",
+        "artist_name":"Green Day",
+        "year":2004,
+        "mood":"dynamic"
+    },
+    {
+        "title":"American Idiot",
+        "artist_name":"Green Day",
+        "year":2004,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Welcome To The Jugle",
+        "artist_name":"Guns N' Roses",
+        "year":1987,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Sweet Child O' Mine",
+        "artist_name":"Guns N' Roses",
+        "year":1987,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Psychosocial",
+        "artist_name":"Slipknot",
+        "year":2008,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Duality",
+        "artist_name":"Slipknot",
+        "year":2004,
+        "mood":"dynamic"
+    },
+    {
+        "title":"Before I Forget",
+        "artist_name":"Slipknot",
+        "year":2004,
+        "mood":"dynamic"
+    },
+    {
+        "title":"I Wanna Hold Your Hand",
+        "artist_name":"The Beatles",
+        "year":1965,
+        "mood":"happy"
+    },
+    {
+        "title":"Help",
+        "artist_name":"The Beatles",
+        "year":1965,
+        "mood":"life sucks"
+    },
+    {
+        "title":"Falling Like The Stars",
+        "artist_name":"James Arthur",
+        "year":2019,
+        "mood":"chill"
+    }
+]
