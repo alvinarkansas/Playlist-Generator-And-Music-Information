@@ -5,7 +5,7 @@ class Controller {
         // req.session.isLogin = true
         console.log(req.session.isLogin);
 
-        res.render('home-bootstrap', {login: req.session.isLogin})
+        res.render('home', {login: req.session.isLogin})
     }
 
     static login(req, res) {
@@ -22,7 +22,7 @@ class Controller {
                     req.session.isLogin = true;
                     console.log(req.session.isLogin);
 
-                    res.redirect('/playlists')
+                    res.redirect('/')
                 } else {
                     throw new Error('Wrong password')
                 }
